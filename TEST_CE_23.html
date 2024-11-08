@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        password is 123
+        <label for="log">Login</label>
+        <input type="text" id="log"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><br><br>
+        <button id="Btn" onclick="validatePassword()">Submit</button>
+        <button>Reset</button>
+        
+   
+    <script>
+        function validatePassword() {
+            const password = document.getElementById("password").value; 
+            const correctPassword = "123"; 
+            if (password === correctPassword) {
+                window.location.href = "convertor.html";             } else {
+                alert("Incorrect password! Please try again.");
+            }
+        }
+    </script>
+
+    </form>
+</body>
+</html>
